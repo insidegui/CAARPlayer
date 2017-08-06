@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD7F287B1F37C442004D8851 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7F287A1F37C442004D8851 /* AppDelegate.m */; };
+		DD7F287E1F37C442004D8851 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7F287D1F37C442004D8851 /* ViewController.m */; };
+		DD7F28811F37C442004D8851 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7F28801F37C442004D8851 /* Document.m */; };
+		DD7F28831F37C442004D8851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7F28821F37C442004D8851 /* Assets.xcassets */; };
+		DD7F28861F37C442004D8851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7F28841F37C442004D8851 /* Main.storyboard */; };
+		DD7F28891F37C442004D8851 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7F28881F37C442004D8851 /* main.m */; };
+		DDB6043B1F37CF63008E8518 /* CAARClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB6043A1F37CF63008E8518 /* CAARClipView.m */; };
+		DDF645B91F37D50900CCCD68 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF645B81F37D50900CCCD68 /* GenerateThumbnailForURL.m */; };
+		DDF645BB1F37D50900CCCD68 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF645BA1F37D50900CCCD68 /* GeneratePreviewForURL.m */; };
+		DDF645BD1F37D50900CCCD68 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DDF645BC1F37D50900CCCD68 /* main.c */; };
+		DDF645C41F37D56E00CCCD68 /* CAARRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF645C21F37D56E00CCCD68 /* CAARRenderer.h */; };
+		DDF645C51F37D56E00CCCD68 /* CAARRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF645C31F37D56E00CCCD68 /* CAARRenderer.m */; };
+		DDF645CB1F37DCBB00CCCD68 /* CAARQuickLook.qlgenerator in QuickLook PlugIn */ = {isa = PBXBuildFile; fileRef = DDF645B61F37D50900CCCD68 /* CAARQuickLook.qlgenerator */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDF645CC1F37DCC200CCCD68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7F286E1F37C442004D8851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF645B51F37D50900CCCD68;
+			remoteInfo = CAARQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDF645CA1F37DCAD00CCCD68 /* QuickLook PlugIn */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				DDF645CB1F37DCBB00CCCD68 /* CAARQuickLook.qlgenerator in QuickLook PlugIn */,
+			);
+			name = "QuickLook PlugIn";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DD7F28761F37C442004D8851 /* CAARPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAARPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7F28791F37C442004D8851 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD7F287A1F37C442004D8851 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD7F287C1F37C442004D8851 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD7F287D1F37C442004D8851 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD7F287F1F37C442004D8851 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		DD7F28801F37C442004D8851 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		DD7F28821F37C442004D8851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD7F28851F37C442004D8851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD7F28871F37C442004D8851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7F28881F37C442004D8851 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD7F28901F37C505004D8851 /* QuartzCorePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzCorePrivate.h; sourceTree = "<group>"; };
+		DDB604391F37CF63008E8518 /* CAARClipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAARClipView.h; sourceTree = "<group>"; };
+		DDB6043A1F37CF63008E8518 /* CAARClipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAARClipView.m; sourceTree = "<group>"; };
+		DDF645B61F37D50900CCCD68 /* CAARQuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAARQuickLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF645B81F37D50900CCCD68 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		DDF645BA1F37D50900CCCD68 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		DDF645BC1F37D50900CCCD68 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DDF645BE1F37D50900CCCD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF645C21F37D56E00CCCD68 /* CAARRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAARRenderer.h; sourceTree = "<group>"; };
+		DDF645C31F37D56E00CCCD68 /* CAARRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAARRenderer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD7F28731F37C442004D8851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF645B21F37D50900CCCD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD7F286D1F37C442004D8851 = {
+			isa = PBXGroup;
+			children = (
+				DD7F28781F37C442004D8851 /* CAARPlayer */,
+				DDF645B71F37D50900CCCD68 /* CAARQuickLook */,
+				DD7F28771F37C442004D8851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD7F28771F37C442004D8851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD7F28761F37C442004D8851 /* CAARPlayer.app */,
+				DDF645B61F37D50900CCCD68 /* CAARQuickLook.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD7F28781F37C442004D8851 /* CAARPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6043F1F37D0AE008E8518 /* Resources */,
+				DDB6043C1F37D086008E8518 /* Core */,
+				DDB6043D1F37D089008E8518 /* Views */,
+				DDB6043E1F37D08E008E8518 /* Controllers */,
+				DD7F28881F37C442004D8851 /* main.m */,
+			);
+			path = CAARPlayer;
+			sourceTree = "<group>";
+		};
+		DDB6043C1F37D086008E8518 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD7F28901F37C505004D8851 /* QuartzCorePrivate.h */,
+				DD7F28791F37C442004D8851 /* AppDelegate.h */,
+				DD7F287A1F37C442004D8851 /* AppDelegate.m */,
+				DD7F287F1F37C442004D8851 /* Document.h */,
+				DD7F28801F37C442004D8851 /* Document.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DDB6043D1F37D089008E8518 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDB604391F37CF63008E8518 /* CAARClipView.h */,
+				DDB6043A1F37CF63008E8518 /* CAARClipView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDB6043E1F37D08E008E8518 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD7F287C1F37C442004D8851 /* ViewController.h */,
+				DD7F287D1F37C442004D8851 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDB6043F1F37D0AE008E8518 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD7F28821F37C442004D8851 /* Assets.xcassets */,
+				DD7F28841F37C442004D8851 /* Main.storyboard */,
+				DD7F28871F37C442004D8851 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDF645B71F37D50900CCCD68 /* CAARQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				DDF645C21F37D56E00CCCD68 /* CAARRenderer.h */,
+				DDF645C31F37D56E00CCCD68 /* CAARRenderer.m */,
+				DDF645B81F37D50900CCCD68 /* GenerateThumbnailForURL.m */,
+				DDF645BA1F37D50900CCCD68 /* GeneratePreviewForURL.m */,
+				DDF645BC1F37D50900CCCD68 /* main.c */,
+				DDF645BE1F37D50900CCCD68 /* Info.plist */,
+			);
+			path = CAARQuickLook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DDF645B31F37D50900CCCD68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF645C41F37D56E00CCCD68 /* CAARRenderer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DD7F28751F37C442004D8851 /* CAARPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7F288D1F37C442004D8851 /* Build configuration list for PBXNativeTarget "CAARPlayer" */;
+			buildPhases = (
+				DD7F28721F37C442004D8851 /* Sources */,
+				DD7F28731F37C442004D8851 /* Frameworks */,
+				DD7F28741F37C442004D8851 /* Resources */,
+				DDF645CA1F37DCAD00CCCD68 /* QuickLook PlugIn */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF645CD1F37DCC200CCCD68 /* PBXTargetDependency */,
+			);
+			name = CAARPlayer;
+			productName = CAARPlayer;
+			productReference = DD7F28761F37C442004D8851 /* CAARPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDF645B51F37D50900CCCD68 /* CAARQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF645BF1F37D50900CCCD68 /* Build configuration list for PBXNativeTarget "CAARQuickLook" */;
+			buildPhases = (
+				DDF645B11F37D50900CCCD68 /* Sources */,
+				DDF645B21F37D50900CCCD68 /* Frameworks */,
+				DDF645B31F37D50900CCCD68 /* Headers */,
+				DDF645B41F37D50900CCCD68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAARQuickLook;
+			productName = CAARQuickLook;
+			productReference = DDF645B61F37D50900CCCD68 /* CAARQuickLook.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD7F286E1F37C442004D8851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Guilherme Rambo";
+				TargetAttributes = {
+					DD7F28751F37C442004D8851 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					DDF645B51F37D50900CCCD68 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = DD7F28711F37C442004D8851 /* Build configuration list for PBXProject "CAARPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD7F286D1F37C442004D8851;
+			productRefGroup = DD7F28771F37C442004D8851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD7F28751F37C442004D8851 /* CAARPlayer */,
+				DDF645B51F37D50900CCCD68 /* CAARQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD7F28741F37C442004D8851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7F28831F37C442004D8851 /* Assets.xcassets in Resources */,
+				DD7F28861F37C442004D8851 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF645B41F37D50900CCCD68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD7F28721F37C442004D8851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7F28811F37C442004D8851 /* Document.m in Sources */,
+				DD7F287E1F37C442004D8851 /* ViewController.m in Sources */,
+				DDB6043B1F37CF63008E8518 /* CAARClipView.m in Sources */,
+				DD7F28891F37C442004D8851 /* main.m in Sources */,
+				DD7F287B1F37C442004D8851 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF645B11F37D50900CCCD68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF645B91F37D50900CCCD68 /* GenerateThumbnailForURL.m in Sources */,
+				DDF645BB1F37D50900CCCD68 /* GeneratePreviewForURL.m in Sources */,
+				DDF645BD1F37D50900CCCD68 /* main.c in Sources */,
+				DDF645C51F37D56E00CCCD68 /* CAARRenderer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDF645CD1F37DCC200CCCD68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF645B51F37D50900CCCD68 /* CAARQuickLook */;
+			targetProxy = DDF645CC1F37DCC200CCCD68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD7F28841F37C442004D8851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7F28851F37C442004D8851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD7F288B1F37C442004D8851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD7F288C1F37C442004D8851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD7F288E1F37C442004D8851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				INFOPLIST_FILE = CAARPlayer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.CAARPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD7F288F1F37C442004D8851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				INFOPLIST_FILE = CAARPlayer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.CAARPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDF645C01F37D50900CCCD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CAARPlayer/Core";
+				INFOPLIST_FILE = CAARQuickLook/Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.CAARQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		DDF645C11F37D50900CCCD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CAARPlayer/Core";
+				INFOPLIST_FILE = CAARQuickLook/Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.CAARQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD7F28711F37C442004D8851 /* Build configuration list for PBXProject "CAARPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7F288B1F37C442004D8851 /* Debug */,
+				DD7F288C1F37C442004D8851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7F288D1F37C442004D8851 /* Build configuration list for PBXNativeTarget "CAARPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7F288E1F37C442004D8851 /* Debug */,
+				DD7F288F1F37C442004D8851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF645BF1F37D50900CCCD68 /* Build configuration list for PBXNativeTarget "CAARQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF645C01F37D50900CCCD68 /* Debug */,
+				DDF645C11F37D50900CCCD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD7F286E1F37C442004D8851 /* Project object */;
+}
