@@ -24,7 +24,9 @@
     NSURL *fileURL = (__bridge NSURL *)url;
     
     NSError *loadError;
-    CAPackage *package = [CAPackage packageWithContentsOfURL:fileURL type:kCAPackageTypeArchive options:nil error:&loadError];
+    NSString *type = ([[fileURL pathExtension] isEqualToString:@"ca"]) ? kCAPackageTypeCAMLBundle : kCAPackageTypeArchive;
+
+    CAPackage *package = [CAPackage packageWithContentsOfURL:fileURL type:type options:nil error:&loadError];
     
     CAARRenderer *instance = [[CAARRenderer alloc] initWithPackage:package];
     instance.error = loadError;
