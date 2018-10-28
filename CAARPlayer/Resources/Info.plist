@@ -30,6 +30,20 @@
 			<key>NSDocumentClass</key>
 			<string>Document</string>
 		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ca</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Core Animation Markup Language Bundle</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSTypeIsPackage</key>
+			<integer>1</integer>
+			<key>NSDocumentClass</key>
+			<string>Document</string>
+		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
@@ -71,6 +85,23 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>caar</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Core Animation Markup Language Bundle</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.apple.caml</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ca</string>
 				</array>
 			</dict>
 		</dict>

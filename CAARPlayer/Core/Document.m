@@ -37,9 +37,14 @@
     [[self.windowControllers.firstObject contentViewController] setRepresentedObject:self];
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-    self.package = [CAPackage packageWithData:data type:kCAPackageTypeArchive options:nil error:outError];
-    
+- (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    if ([[url pathExtension] isEqualToString:@"ca"]) {
+        self.package = [CAPackage packageWithContentsOfURL:url type:kCAPackageTypeCAMLBundle options:nil error:outError];
+    } else {
+        self.package = [CAPackage packageWithContentsOfURL:url type:kCAPackageTypeArchive options:nil error:outError];
+    }
+
     return YES;
 }
 

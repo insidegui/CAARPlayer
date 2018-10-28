@@ -28,6 +28,7 @@
 extern NSData *CAEncodeLayerTree(CALayer *rootLayer);
 
 extern NSString *kCAPackageTypeArchive;
+extern NSString *kCAPackageTypeCAMLBundle;
 
 @interface CAPackage : NSObject
 
