@@ -1,12 +1,16 @@
 # Core Animation Archive Player
 
-This app lets you view .caar files.
+This app lets you view `.caar` and `.ca` files.
 
 ![](./screenshots/screenshot_app.png)
 
 ## What are .caar files?
 
 CAAR files are Core Animation Archive files. They consist of core animation layers that are archived using `NSKeyedArchiver` to be later used as vector images in UI elements (especially when there are animations involved).
+
+## What are .ca files?
+
+Packages with the `.ca` extension are CAML (Core Animation Markup Language) bundles, they contain Core Animation trees encoded as XML and associated assets required by the encoded layer tree.
 
 ## Why do I care?
 
